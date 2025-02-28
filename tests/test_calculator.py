@@ -24,16 +24,14 @@ def test_division():
     result = perform_operation(4, 10, 2)  # Test the division operation
     assert result == 5.0
 
+
 # Test for division by zero
 def test_division_by_zero():
     result = perform_operation(4, 10, 0)  # Division by zero
     assert result == "Error! Division by zero is not allowed."
 
-def test_exponent():
-    result = perform_operation(5, 2, 3)  # Test the exponent operation
-    assert result == 8.0
 
 # Test for invalid operation
 def test_invalid_choice():
-    result = perform_operation(50, 10, 2)  # Invalid operation choice
+    result = perform_operation(5, 10, 2)  # Invalid operation choice
     assert result == "Invalid choice! Please choose 1, 2, 3, or 4."

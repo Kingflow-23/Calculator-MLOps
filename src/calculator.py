@@ -1,4 +1,4 @@
-from src.utils import add, subtract, multiply, divide, exponent
+from src.utils import add, subtract, multiply, divide
 
 def perform_operation(choice, num1, num2):
     if choice == 1:
@@ -11,9 +11,6 @@ def perform_operation(choice, num1, num2):
         if num2 == 0:
             return "Error! Division by zero is not allowed."
         return divide(num1, num2)
-    elif choice == 5:
-        return exponent(num1, num2)
-    
     else:
         return "Invalid choice! Please choose 1, 2, 3, or 4."
 
