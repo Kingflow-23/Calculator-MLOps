@@ -12,5 +12,5 @@ def divide(x, y):
         raise ValueError('Cannot divide by zero')
     return x / y
 
-def exponent(base, exponent):
-    return base ** exponent
+def exponent(base, power):
+    return base ** power
