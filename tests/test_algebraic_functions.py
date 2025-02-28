@@ -6,10 +6,10 @@ import os
 import sys
 
 # Add project root to Python path
-project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.insert(0, project_root)
 
-from src.utils import add, subtract, multiply, divide
+from src.utils import add, subtract, multiply, divide, exponent
 
 class TestCalculator:
     
@@ -37,6 +37,12 @@ class TestCalculator:
         assert 0.5 == divide(1, 2)
         assert 0 == divide(0, 1)
         assert 0 == divide(0, 100)
+        
+    def test_exponent(self):
+        assert 4 == exponent(2, 2)
+        assert 8 == exponent(2, 3)
+        assert 1 == exponent(1, 100)
+        assert 0 == exponent(0, 100)
         
     def test_division_by_zero(self):
         try:
