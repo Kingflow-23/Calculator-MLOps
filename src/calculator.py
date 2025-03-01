@@ -28,6 +28,17 @@ def perform_operation(choice, num1, num2):
         return "Invalid choice! Please choose 1, 2, 3, or 4."
 
 def calculator(choice, num1, num2, another_calculation='no'):
+    """Performs the operation based on the choice provided by the user.
+    
+    Args:
+        choice (int): The choice of operation.
+        num1 (float): The first number.
+        num2 (float): The second number.
+        another_calculation (str): Flag to check if the user wants to perform another calculation.
+        
+    Returns:
+        tuple: A tuple containing a flag and the result of the operation.
+    """
     result = perform_operation(choice, num1, num2)
     
     if another_calculation == 'yes':
