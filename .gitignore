@@ -1,0 +1,9 @@
+Include/
+Lib/
+Scripts/
+share/
+pyvenv.cfg
+__init__.py
+__pycache__/
+.coverage
+.pytest_cache/
