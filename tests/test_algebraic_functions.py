@@ -5,14 +5,14 @@ Unit tests for the calculator library
 import os
 import sys
 
-# Add project root to Python path
+# Add project root to Python path.
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.insert(0, project_root)
 
 from src.utils import add, subtract, multiply, divide, exponent
 
 class TestCalculator:
-    """ Test class for calculator library. """
+    """ Test class for calculator library """
     
     def test_addition(self):
         assert 4 == add(2, 2)
