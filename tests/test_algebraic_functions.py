@@ -12,6 +12,7 @@ sys.path.insert(0, project_root)
 from src.utils import add, subtract, multiply, divide, exponent
 
 class TestCalculator:
+    """ Test class for calculator library """
     
     def test_addition(self):
         assert 4 == add(2, 2)
