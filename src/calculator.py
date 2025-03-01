@@ -1,6 +1,16 @@
 from src.utils import add, subtract, multiply, divide, exponent
 
 def perform_operation(choice, num1, num2):
+    """Performs the operation based on the choice provided by the user.
+
+    Args:
+        choice (int): The choice of operation.
+        num1 (float): The first number.
+        num2 (float): The second number.
+
+    Returns:
+        float: The result of the operation.
+    """
     if choice == 1:
         return add(num1, num2)
     elif choice == 2:
